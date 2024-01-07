@@ -1,9 +1,21 @@
-// ------------------
-// top page
-// ------------------
+@use 'variables';
+@use 'mixin';
+
+// -------------------------
+// トップページのスタイル
+// -------------------------
 .main-img {
   width: 100%;
+  min-width: 1080px;
   height: 0;
   padding-top: calc(700 / 1920 * 100%);
   background: url(./img/main-visual.jpg) center/cover no-repeat;
+  @include mixin.scroll {
+    padding-top: calc(700 / 1920 * 1080px);
+  }
+  @include mixin.sp {
+    min-width: auto;
+    padding-top: calc(1080 / 720 * 100%);
+    background: url(./img/main-visual-sp.jpg) center/cover no-repeat;
+  }
 }

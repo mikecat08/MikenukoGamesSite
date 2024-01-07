@@ -1,0 +1,132 @@
+@use 'variables';
+@use 'mixin';
+
+// -------------------------
+// 全ページ共通のスタイル
+// -------------------------
+
+//全ての要素のbox-sizingの値を親要素から継承する
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  // cursor: inherit;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  //html要素のbox-sizingの値はboerder-boxを指定
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  color: variables.$main_txt-color;
+  line-height: 1.5;
+  background-color: variables.$bg-color;
+}
+
+.link {
+  cursor: pointer;
+  color: variables.$main_txt-color;
+}
+
+.img-wrapper {
+  text-align: center;
+  img {
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+//SP版のみ改行
+.br-sp {
+  display: none;
+  @include mixin.sp {
+    display: block;
+  }
+}
+
+//PC版のみ改行
+.br-pc {
+  @include mixin.sp {
+    display: none;
+  }
+}
+
+.sp-only {
+  @include mixin.pc {
+    display: none;
+  }
+}
+
+.pc-only {
+  @include mixin.sp {
+    display: none;
+  }
+}
+
+//セクションインナーのデザイン
+.section-inner {
+  max-width: 1160px;
+  min-width: 1080px;
+  padding: 0 30px;
+  margin: 90px auto 0;
+  @include mixin.sp {
+    min-width: 100%;
+    padding: 0 15px;
+    margin-top: 60px;
+  }
+}
+
+// ドロップダウン展開時の背景デザイン用要素
+.dark-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: variables.$burger_menu-opened-bg-color;
+  transition: all 0.35s ease;
+  visibility: hidden;
+  z-index: 5;
+
+  &.active {
+    visibility: visible;
+  }
+}
+
+//上方向に浮かび上がる動きをする対象の初期状態を指定しています。
+.fadeup-target {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+//jsによって、in-viewというクラスが付与されたタイミングで発火します。
+//上方向に浮かび上がる動きを指定しています。
+.fadeup-target.in-view {
+  animation: translateY_up_animation 1s ease forwards, opacity_animation 1s ease 0.1s forwards;
+  -webkit-animation: translateY_up_animation 1s ease forwards, opacity_animation 1s ease 0.1s forwards;
+}
+
+//上方向に浮かび上がる動きの内、0.2秒遅れて浮かび上がるものを指定しています。
+.fadeup-target.in-view.delay-2 {
+  animation: translateY_up_animation 1s ease 0.2s forwards, opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.2s forwards, opacity_animation 1s ease 0.3s forwards;
+}
+
+//上方向に浮かび上がる動きの内、0.3秒遅れて浮かび上がるものを指定しています。
+.fadeup-target.in-view.delay-3 {
+  animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+}
+
+//上方向に浮かび上がる動きの内、0.4秒遅れて浮かび上がるものを指定しています。
+.fadeup-target.in-view.delay-4 {
+  animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+}

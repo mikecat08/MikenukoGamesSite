@@ -1,0 +1,29 @@
+// ------------------------------
+// レスポンシブデザイン関係
+// ------------------------------
+
+//ブレイクポイントの設定
+$breakpoint-sp: '900px';
+$breakpoint-pc: '901px';
+$breakpoint-scroll: '1080px';
+
+// SPデザイン指定用のミキシン
+@mixin sp {
+  @media screen and (max-width:$breakpoint-sp) {
+    @content;
+  }
+}
+
+// PCデザイン指定用のミキシン
+@mixin pc {
+  @media screen and (min-width:$breakpoint-pc) {
+    @content;
+  }
+}
+
+// PC表示で横スクロールが発生する時用のミキシン
+@mixin scroll {
+  @media screen and (min-width:$breakpoint-pc) and (max-width:$breakpoint-scroll) {
+    @content;
+  }
+}

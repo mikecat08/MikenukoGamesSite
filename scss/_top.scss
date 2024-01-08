@@ -4,6 +4,8 @@
 // -------------------------
 // トップページのスタイル
 // -------------------------
+
+// start メインイメージ
 .main-img {
   width: 100%;
   min-width: 1080px;
@@ -19,3 +21,76 @@
     background: url(./img/main-visual-sp.jpg) center/cover no-repeat;
   }
 }
+// end メインイメージ
+
+// start お知らせセクション
+.news-section {
+  background-color: variables.$accent_green-color;
+  padding-bottom: 60px;
+  .section-inner {
+    h2 {
+      font-size: 3.6rem;
+      left: 0.6rem;
+      padding: 1em 0;
+      text-align: center;
+      font-weight: 700;
+      @include mixin.sp {
+        font-size: 3rem;
+        margin-bottom: 0;
+        padding: 0.7em 0;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 10px 0 0;
+        @include mixin.sp {
+          padding: 0;
+        }
+      }
+    }
+    .news-container {
+      .news-list {
+        .news-list-item {
+          border-top: 1px solid variables.$main_txt-color;
+          &:last-child {
+            border-bottom: 1px solid variables.$main_txt-color;
+          }
+          .news-list-item-inner {
+            padding: 20px 15px;
+            display: flex;
+            @include mixin.sp {
+              flex-direction: column;
+              padding: 15px;
+            }
+            .date {
+              margin-right: 30px;
+              display: inline-block;
+              @include mixin.sp {
+                margin-right: 10px;
+              }
+            }
+            .category {
+              display: inline-block;
+              color: variables.$whie_txt-color;
+              margin-right: 30px;
+              border-radius: 15px;
+              padding: 5px 20px;
+              font-size: 1.2rem;
+              background-color: variables.$label_purple-color;
+              @include mixin.sp {
+                margin-right: 0;
+              }
+            }
+            .news-title {
+              @include mixin.sp {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end お知らせセクション

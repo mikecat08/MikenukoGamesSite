@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'mixin';
+@use "variables";
+@use "mixin";
 
 // -------------------------
 // 全ページ共通のスタイル
@@ -14,9 +14,9 @@
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 62.5%;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.05em;
 
   //html要素のbox-sizingの値はboerder-boxを指定
@@ -28,11 +28,6 @@ body {
   color: variables.$main_txt-color;
   line-height: 1.5;
   background-color: variables.$bg-color;
-}
-
-.link {
-  cursor: pointer;
-  color: variables.$main_txt-color;
 }
 
 .img-wrapper {
@@ -70,16 +65,13 @@ body {
   }
 }
 
-//セクションインナーのデザイン
 .section-inner {
   max-width: 1160px;
   min-width: 1080px;
-  padding: 0 30px;
-  margin: 90px auto 0;
+  margin: 0 auto;
+  padding: 0 20px;
   @include mixin.sp {
-    min-width: 100%;
-    padding: 0 15px;
-    margin-top: 60px;
+    min-width: auto;
   }
 }
 
@@ -98,7 +90,26 @@ body {
   &.active {
     visibility: visible;
     transition: all 0.35s ease;
-    
+  }
+}
+
+//ボタンモジュール
+.mod-btn {
+  display: flex;
+  a {
+    font-weight: 700;
+    display: inline-block;
+    color: variables.$whie_txt-color;
+    border-radius: 30px;
+    margin: 50px auto 0;
+    padding: 10px 40px;
+    box-shadow: 0 2px 6px variables.$blur_shadow-color;
+    @include mixin.sp {
+      margin-top: 40px;
+    }
+    &.pink {
+      background-color: variables.$accent_pink-color;
+    }
   }
 }
 
@@ -111,24 +122,32 @@ body {
 //jsによって、in-viewというクラスが付与されたタイミングで発火します。
 //上方向に浮かび上がる動きを指定しています。
 .fadeup-target.in-view {
-  animation: translateY_up_animation 1s ease forwards, opacity_animation 1s ease 0.1s forwards;
-  -webkit-animation: translateY_up_animation 1s ease forwards, opacity_animation 1s ease 0.1s forwards;
+  animation: translateY_up_animation 1s ease forwards,
+    opacity_animation 1s ease 0.1s forwards;
+  -webkit-animation: translateY_up_animation 1s ease forwards,
+    opacity_animation 1s ease 0.1s forwards;
 }
 
 //上方向に浮かび上がる動きの内、0.2秒遅れて浮かび上がるものを指定しています。
 .fadeup-target.in-view.delay-2 {
-  animation: translateY_up_animation 1s ease 0.2s forwards, opacity_animation 1s ease 0.3s forwards;
-  -webkit-animation: translateY_up_animation 1s ease 0.2s forwards, opacity_animation 1s ease 0.3s forwards;
+  animation: translateY_up_animation 1s ease 0.2s forwards,
+    opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.2s forwards,
+    opacity_animation 1s ease 0.3s forwards;
 }
 
 //上方向に浮かび上がる動きの内、0.3秒遅れて浮かび上がるものを指定しています。
 .fadeup-target.in-view.delay-3 {
-  animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
-  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+  animation: translateY_up_animation 1s ease 0.3s forwards,
+    opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards,
+    opacity_animation 1s ease 0.3s forwards;
 }
 
 //上方向に浮かび上がる動きの内、0.4秒遅れて浮かび上がるものを指定しています。
 .fadeup-target.in-view.delay-4 {
-  animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
-  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
+  animation: translateY_up_animation 1s ease 0.3s forwards,
+    opacity_animation 1s ease 0.3s forwards;
+  -webkit-animation: translateY_up_animation 1s ease 0.3s forwards,
+    opacity_animation 1s ease 0.3s forwards;
 }

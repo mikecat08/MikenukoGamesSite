@@ -14,13 +14,13 @@
   <header>
     <div class="header-inner" id="burger-menu">
       <!-- start ヘッダーロゴ -->
-      <div class="header-logo-container">
+      <h1 class="header-logo-container">
         <a href="./">
           <div class="logo-wrapper img-wrapper">
             <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ">
           </div>
         </a>
-      </div>
+      </h1>
       <!-- end ヘッダーロゴ -->
       <!-- start グローバルナビ -->
       <nav class="global_nav-container">
@@ -55,9 +55,96 @@
   <div id="dark-mask" class="dark-mask"></div>
 
   <main>
+    <!-- start メインイメージ -->
     <div class="main-img"></div>
+    <!-- end メインイメージ -->
+    <!-- start メインコンテンツ -->
+    <div class="contents-inner">
+      <!-- start お知らせエリア -->
+      <section class="section-wrapper news-section">
+        <div class="section-inner">
+          <h2>お知らせ<span>NEWS</span></h2>
+          <div class="news-container">
+            <ul class="news-list">
+              <li class="news-list-item">
+                <a href="#" class="news-list-item-inner">
+                  <div class="label">
+                    <span class="date">2023年7月31日</span>
+                    <span class="category">スケジュール</span>
+                  </div>
+                  <div class="news-title">投稿スケジュール変更のお知らせ</div>
+                </a>
+              </li>
+              <li class="news-list-item">
+                <a href="#" class="news-list-item-inner">
+                  <div class="label">
+                    <span class="date">2023年7月31日</span>
+                    <span class="category">スケジュール</span>
+                  </div>
+                  <div class="news-title">新実況シリーズ開始予告</div>
+                </a>
+              </li>
+              <li class="news-list-item">
+                <a href="#" class="news-list-item-inner">
+                  <div class="label">
+                    <span class="date">2023年7月31日</span>
+                    <span class="category">生放送</span>
+                  </div>
+                  <div class="news-title">ツイステガチャ生放送予告</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-btn">
+            <a href="./news/" class="pink">お知らせ一覧はこちら</a>
+          </div>
+        </div>
+      </section>
+      <!-- end お知らせエリア -->
+    </div>
+    <!-- end メインコンテンツ -->
   </main>
-  <footer></footer>
+
+  <footer>
+    <!-- start フッターロゴ -->
+    <div class="footer-logo-container">
+      <a href="./">
+        <div class="logo-wrapper img-wrapper">
+          <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ">
+        </div>
+      </a>
+    </div>
+    <!-- end フッターロゴ -->
+    <!-- start フッターナビ -->
+    <nav class="footer_nav-container">
+      <ul class="footer_nav-list">
+        <li class="footer_nav-list-item">
+          <a href="./" class="footer_nav home">
+            ホーム
+          </a>
+        </li>
+        <li class="footer_nav-list-item">
+          <a href="./news/" class="footer_nav home">
+            お知らせ
+          </a>
+        </li>
+        <li class="footer_nav-list-item">
+          <a href="./request-form/" class="footer_nav news">
+            お問い合わせ
+          </a>
+        </li>
+        <li class="footer_nav-list-item">
+          <a href="./privacy/" class="footer_nav request">
+            プライバシーポリシー
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end フッターナビ -->
+    <div class="copy_right">
+      &copy; ミケぬこ実況局（ミケぬこWEBクリエイト）
+    </div>
+  </footer>
   <!-- jQueryのCDN読み込み（js） -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

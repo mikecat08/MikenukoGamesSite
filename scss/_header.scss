@@ -19,6 +19,7 @@ header {
     min-width: 1080px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 20px;
     @include mixin.sp {
       position: fixed;
       right: -768px;
@@ -50,7 +51,7 @@ header {
       .logo-wrapper {
         height: 100%;
         display: flex;
-        padding: 5px 0;
+        padding: 10px 0;
         @include mixin.sp {
           max-width: 155px;
           padding: 0 0 0 20px;

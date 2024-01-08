@@ -1,0 +1,62 @@
+@use 'variables';
+@use 'mixin';
+
+// -------------------------
+// フッターのスタイル
+// -------------------------
+footer {
+  background-color: variables.$darker_pink-color;
+  color: variables.$whie_txt-color;
+  padding:30px 0 50px;
+  @include mixin.sp {
+    padding-bottom: 30px;
+  }
+  //start フッターロゴ
+  .footer-logo-container {
+    display: flex;
+    justify-content: center;
+    .logo-wrapper {
+      width: 140px;
+      height: 100%;
+      display: flex;
+    }
+  }
+  //end フッターロゴ
+  //start フッターナビ
+  .footer_nav-container {
+    margin-top: 30px;
+    .footer_nav-list {
+      display: flex;
+      justify-content: center;
+      @include mixin.sp {
+        flex-direction: column;
+      }
+      .footer_nav-list-item {
+        margin-left: 40px;
+        @include mixin.sp {
+          margin-right: 0;
+          text-align: center;
+          margin: 15px 20px 0;
+          padding-bottom: 15px;
+          border-bottom: 1px solid variables.$border_pink-color;
+        }
+        &:first-child {
+          margin-left: 0;
+          @include mixin.sp {
+            margin: 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+  //end フッターナビ
+  //start コピーライト
+  .copy_right {
+    text-align: center;
+    margin-top: 30px;
+    @include mixin.sp {
+      font-size: 1.4rem;
+    }
+  }
+  //end コピーライト
+}

@@ -437,6 +437,7 @@ footer .copy_right {
 .news-section .section-inner .news-container .news-list .news-list-item .news-list-item-inner .date {
   margin-right: 30px;
   display: inline-block;
+  min-width: 130px;
 }
 @media screen and (max-width: 900px) {
   .news-section .section-inner .news-container .news-list .news-list-item .news-list-item-inner .date {
@@ -451,6 +452,8 @@ footer .copy_right {
   padding: 5px 20px;
   font-size: 1.2rem;
   background-color: #BD5FEB;
+  min-width: 120px;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   .news-section .section-inner .news-container .news-list .news-list-item .news-list-item-inner .category {

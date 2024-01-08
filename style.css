@@ -86,6 +86,7 @@ body {
 }
 .dark-mask.active {
   visibility: visible;
+  transition: all 0.35s ease;
 }
 
 .fadeup-target {

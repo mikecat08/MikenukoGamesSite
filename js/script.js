@@ -1,7 +1,7 @@
 $(function () {
 
   //-------------------------------------
-  //fade upの動き
+  // fade upの動き
   //-------------------------------------
 
   //ウィンドウがスクロールされたタイミングで下記の処理が動きます。
@@ -27,7 +27,7 @@ $(function () {
 
 
   //-------------------------------------
-  //ハンバーガーボタン開閉の動き
+  // ハンバーガーボタン開閉の動き
   //-------------------------------------
 
   //何度も指定するのでボタンとメニューの要素指定を変数に格納します。
@@ -66,6 +66,75 @@ $(function () {
 
       //ボタンの中のテキストを取得して書き換えます。
       $burgerBtn.children('span').text('閉じる');
+    }
+  });
+
+
+  //-------------------------------------
+  // swiperの設定
+  //-------------------------------------
+  
+  // pc表示のswiper初期化
+  const gamesSwiper = new Swiper("#games-swiper-pc", {
+
+    // ループ設定
+    loop: true,
+
+    // スライドが切り替わるスピード
+    speed: 2000,
+
+    // スライドを1画面に何枚分表示させるか設定
+    slidesPerView: 1,
+
+    // スライド間の余白
+    spaceBetween: 50,
+    
+    // 自動再生の設定
+    autoplay: {
+
+      // スライド切り替わりの間隔
+      delay: 6000,
+
+      // スライド操作中は自動再生が停止する設定
+      disableOnInteraction: true,
+    },
+    
+    // ナビボタンの設定
+    navigation: {
+      nextEl: "#swiper-button-next-pc",
+      prevEl: "#swiper-button-prev-pc"
+    }
+  });
+
+  // sp表示のswiper初期化
+  const gamesSwiperSp = new Swiper("#games-swiper-sp", {
+
+    // ループ設定
+    loop: true,
+
+    // スライドが切り替わるスピード
+    speed: 2000,
+
+    // スライドを1画面に何枚分表示させるか設定
+    slidesPerView: 1,
+
+    // スライド間の余白
+    spaceBetween: 50,
+    
+    // 自動再生の設定
+    autoplay: {
+
+      // スライド切り替わりの間隔
+      delay: 6000,
+
+      // スライド操作中は自動再生が停止する設定
+      disableOnInteraction: true,
+    },
+    
+    // ナビボタンの設定
+    navigation: {
+      nextEl: "#swiper-button-next-sp",
+      prevEl: "#swiper-button-prev-sp"
     }
   });
 });

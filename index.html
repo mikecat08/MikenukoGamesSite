@@ -1,154 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ミケぬこ実況局公式サイト</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header>
-    <div class="header-inner" id="burger-menu">
-      <!-- start ヘッダーロゴ -->
-      <h1 class="header-logo-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ミケぬこ実況局公式サイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- swiperのCSS読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner" id="burger-menu">
+        <!-- start ヘッダーロゴ -->
+        <h1 class="header-logo-container">
+          <a href="./">
+            <div class="logo-wrapper img-wrapper">
+              <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ" />
+            </div>
+          </a>
+        </h1>
+        <!-- end ヘッダーロゴ -->
+        <!-- start グローバルナビ -->
+        <nav class="global_nav-container">
+          <ul class="global_nav-list">
+            <li class="global_nav-list-item">
+              <a href="./" class="global_nav home"> HOME </a>
+            </li>
+            <li class="global_nav-list-item">
+              <a href="./news/" class="global_nav news"> NEWS </a>
+            </li>
+            <li class="global_nav-list-item">
+              <a href="./request-form/" class="global_nav request"> REQUEST </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end グローバルナビ -->
+      </div>
+      <!-- start ハンバーガーボタン -->
+      <div id="burger-btn" class="burger-btn sp-only">
+        <span>メニュー</span>
+      </div>
+      <!-- end ハンバーガーボタン -->
+    </header>
+
+    <!-- ドロップダウン展開時の背景デザイン用要素 -->
+    <div id="dark-mask" class="dark-mask"></div>
+
+    <main>
+      <!-- start メインイメージ -->
+      <div class="main-img"></div>
+      <!-- end メインイメージ -->
+      <!-- start メインコンテンツ -->
+      <div class="contents-inner">
+        <!-- start お知らせエリア -->
+        <section class="section-wrapper news-section">
+          <div class="section-inner">
+            <h2>お知らせ<span>NEWS</span></h2>
+            <div class="news-container">
+              <ul class="news-list">
+                <li class="news-list-item">
+                  <a href="#" class="news-list-item-inner">
+                    <div class="label">
+                      <span class="date">2023年7月31日</span>
+                      <span class="category">スケジュール</span>
+                    </div>
+                    <div class="news-title">投稿スケジュール変更のお知らせ</div>
+                  </a>
+                </li>
+                <li class="news-list-item">
+                  <a href="#" class="news-list-item-inner">
+                    <div class="label">
+                      <span class="date">2023年7月31日</span>
+                      <span class="category">スケジュール</span>
+                    </div>
+                    <div class="news-title">新実況シリーズ開始予告</div>
+                  </a>
+                </li>
+                <li class="news-list-item">
+                  <a href="#" class="news-list-item-inner">
+                    <div class="label">
+                      <span class="date">2023年7月31日</span>
+                      <span class="category">生放送</span>
+                    </div>
+                    <div class="news-title">ツイステガチャ生放送予告</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mod-btn">
+              <a href="./news/" class="pink">お知らせ一覧はこちら</a>
+            </div>
+          </div>
+        </section>
+        <!-- end お知らせエリア -->
+        <!-- start 実況ゲームエリア -->
+        <section class="section-wrapper goal-section">
+          <h2>
+            <div class="img-wrapper">
+              <img src="./img/games_section-ttl.png" alt="実況中のゲーム" />
+            </div>
+          </h2>
+          <!-- start pc表示のswiper -->
+          <div class="content-box pc-only">
+            <div class="content-box-horizontal">
+              <div class="swiper" id="games-swiper-pc">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content-inner">
+                      <div class="content-img img-wrapper">
+                        <img src="./img/ES-thumbnail.png" alt="" />
+                      </div>
+                      <div class="content-desc">
+                        <h3>あんさんぶるスターズ！</h3>
+                        <p>
+                          あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content-inner">
+                      <div class="content-img img-wrapper">
+                        <img src="./img/ES-thumbnail.png" alt="" />
+                      </div>
+                      <div class="content-desc">
+                        <h3>あんさんぶるスターズ！</h3>
+                        <p>
+                          あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content-inner">
+                      <div class="content-img img-wrapper">
+                        <img src="./img/ES-thumbnail.png" alt="" />
+                      </div>
+                      <div class="content-desc">
+                        <h3>あんさんぶるスターズ！</h3>
+                        <p>
+                          あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev" id="swiper-button-prev-pc"></div>
+              <div class="swiper-button-next" id="swiper-button-next-pc"></div>
+            </div>
+          </div>
+          <!-- end pc表示のswiper -->
+          <!-- start sp表示のswiper -->
+          <div class="content-box-sp sp-only">
+            <div class="content-box-diagonal"></div>
+            <div class="swiper" id="games-swiper-sp">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="content-inner">
+                    <div class="content-img img-wrapper">
+                      <img src="./img/ES-thumbnail.png" alt="" />
+                    </div>
+                    <div class="content-desc">
+                      <h3>あんさんぶるスターズ！</h3>
+                      <p>
+                        あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content-inner">
+                    <div class="content-img img-wrapper">
+                      <img src="./img/ES-thumbnail.png" alt="" />
+                    </div>
+                    <div class="content-desc">
+                      <h3>あんさんぶるスターズ！</h3>
+                      <p>
+                        あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content-inner">
+                    <div class="content-img img-wrapper">
+                      <img src="./img/ES-thumbnail.png" alt="" />
+                    </div>
+                    <div class="content-desc">
+                      <h3>あんさんぶるスターズ！</h3>
+                      <p>
+                        あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明あんスタ実況のコンセプト説明
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev" id="swiper-button-prev-sp"></div>
+            <div class="swiper-button-next" id="swiper-button-next-sp"></div>
+          </div>
+          <!-- end sp表示のswiper -->
+        </section>
+        <!-- end 実況ゲームエリア -->
+      </div>
+      <!-- end メインコンテンツ -->
+    </main>
+
+    <footer>
+      <!-- start フッターロゴ -->
+      <div class="footer-logo-container">
         <a href="./">
           <div class="logo-wrapper img-wrapper">
-            <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ">
+            <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ" />
           </div>
         </a>
-      </h1>
-      <!-- end ヘッダーロゴ -->
-      <!-- start グローバルナビ -->
-      <nav class="global_nav-container">
-        <ul class="global_nav-list">
-          <li class="global_nav-list-item">
-            <a href="./" class="global_nav home">
-              HOME
-            </a>
+      </div>
+      <!-- end フッターロゴ -->
+      <!-- start フッターナビ -->
+      <nav class="footer_nav-container">
+        <ul class="footer_nav-list">
+          <li class="footer_nav-list-item">
+            <a href="./" class="footer_nav home"> ホーム </a>
           </li>
-          <li class="global_nav-list-item">
-            <a href="./news/" class="global_nav news">
-              NEWS
-            </a>
+          <li class="footer_nav-list-item">
+            <a href="./news/" class="footer_nav home"> お知らせ </a>
           </li>
-          <li class="global_nav-list-item">
-            <a href="./request-form/" class="global_nav request">
-              REQUEST
+          <li class="footer_nav-list-item">
+            <a href="./request-form/" class="footer_nav news"> お問い合わせ </a>
+          </li>
+          <li class="footer_nav-list-item">
+            <a href="./privacy/" class="footer_nav request">
+              プライバシーポリシー
             </a>
           </li>
         </ul>
       </nav>
-      <!-- end グローバルナビ -->
-    </div>
-    <!-- start ハンバーガーボタン -->
-    <div id="burger-btn" class="burger-btn sp-only">
-      <span>メニュー</span>
-    </div>
-    <!-- end ハンバーガーボタン -->
-  </header>
+      <!-- end フッターナビ -->
+      <div class="copy_right">
+        &copy; ミケぬこ実況局（ミケぬこWEBクリエイト）
+      </div>
+    </footer>
+    <!-- jQueryのCDN読み込み（js） -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- ドロップダウン展開時の背景デザイン用要素 -->
-  <div id="dark-mask" class="dark-mask"></div>
+    <!-- js読み込み -->
+    <script src="./js/script.js"></script>
 
-  <main>
-    <!-- start メインイメージ -->
-    <div class="main-img"></div>
-    <!-- end メインイメージ -->
-    <!-- start メインコンテンツ -->
-    <div class="contents-inner">
-      <!-- start お知らせエリア -->
-      <section class="section-wrapper news-section">
-        <div class="section-inner">
-          <h2>お知らせ<span>NEWS</span></h2>
-          <div class="news-container">
-            <ul class="news-list">
-              <li class="news-list-item">
-                <a href="#" class="news-list-item-inner">
-                  <div class="label">
-                    <span class="date">2023年7月31日</span>
-                    <span class="category">スケジュール</span>
-                  </div>
-                  <div class="news-title">投稿スケジュール変更のお知らせ</div>
-                </a>
-              </li>
-              <li class="news-list-item">
-                <a href="#" class="news-list-item-inner">
-                  <div class="label">
-                    <span class="date">2023年7月31日</span>
-                    <span class="category">スケジュール</span>
-                  </div>
-                  <div class="news-title">新実況シリーズ開始予告</div>
-                </a>
-              </li>
-              <li class="news-list-item">
-                <a href="#" class="news-list-item-inner">
-                  <div class="label">
-                    <span class="date">2023年7月31日</span>
-                    <span class="category">生放送</span>
-                  </div>
-                  <div class="news-title">ツイステガチャ生放送予告</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mod-btn">
-            <a href="./news/" class="pink">お知らせ一覧はこちら</a>
-          </div>
-        </div>
-      </section>
-      <!-- end お知らせエリア -->
-    </div>
-    <!-- end メインコンテンツ -->
-  </main>
-
-  <footer>
-    <!-- start フッターロゴ -->
-    <div class="footer-logo-container">
-      <a href="./">
-        <div class="logo-wrapper img-wrapper">
-          <img src="./img/logo.png" alt="ミケぬこ実況局のロゴ">
-        </div>
-      </a>
-    </div>
-    <!-- end フッターロゴ -->
-    <!-- start フッターナビ -->
-    <nav class="footer_nav-container">
-      <ul class="footer_nav-list">
-        <li class="footer_nav-list-item">
-          <a href="./" class="footer_nav home">
-            ホーム
-          </a>
-        </li>
-        <li class="footer_nav-list-item">
-          <a href="./news/" class="footer_nav home">
-            お知らせ
-          </a>
-        </li>
-        <li class="footer_nav-list-item">
-          <a href="./request-form/" class="footer_nav news">
-            お問い合わせ
-          </a>
-        </li>
-        <li class="footer_nav-list-item">
-          <a href="./privacy/" class="footer_nav request">
-            プライバシーポリシー
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- end フッターナビ -->
-    <div class="copy_right">
-      &copy; ミケぬこ実況局（ミケぬこWEBクリエイト）
-    </div>
-  </footer>
-  <!-- jQueryのCDN読み込み（js） -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- js読み込み -->
-  <script src="./js/script.js"></script>
-</body>
+    <!-- swiperのjs読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
 </html>

@@ -65,6 +65,10 @@ body {
   }
 }
 
+.contents-inner {
+  background: url(../img/background.jpg) center/contain repeat-y;
+}
+
 .section-inner {
   max-width: 1160px;
   min-width: 1080px;

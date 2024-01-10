@@ -69,6 +69,7 @@
               min-width: 130px;
               @include mixin.sp {
                 margin-right: 10px;
+                min-width: auto;
               }
             }
             .category {

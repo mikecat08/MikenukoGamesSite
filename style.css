@@ -446,6 +446,7 @@ footer .copy_right {
 @media screen and (max-width: 900px) {
   .news-section .section-inner .news-container .news-list .news-list-item .news-list-item-inner .date {
     margin-right: 10px;
+    min-width: auto;
   }
 }
 .news-section .section-inner .news-container .news-list .news-list-item .news-list-item-inner .category {

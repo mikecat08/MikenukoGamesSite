@@ -120,6 +120,7 @@ section:not(:first-child) {
     margin: 2.62% 0 1.83%;
     transform: skewY(-3deg);
     background-color: variables.$accent_pink-color;
+    color: variables.$whie_txt-color;
     .content-box-horizontal {
       -webkit-transform: skewY(3deg) scale(1.05);
       transform: skewY(3deg) scale(1.05);
@@ -129,6 +130,21 @@ section:not(:first-child) {
         min-width: auto;
       }
     }
+    
+  }
+}
+section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 12em;
+  @include mixin.sp {
+    padding-bottom: 4em;
+  }
+}
+// end お知らせエリア以下の共通項目
+// start 実況中のゲームエリア
+.games-section {
+  // start PC表示のswiper
+  .content-box {
     .content-inner {
       display: flex;
       justify-content: space-between;
@@ -140,7 +156,6 @@ section:not(:first-child) {
         width: 50%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        color: variables.$whie_txt-color;
         padding-right: 15px;
         h3 {
           font-size: 2.5rem;
@@ -155,81 +170,75 @@ section:not(:first-child) {
       }
     }
   }
-}
-section:last-child {
-  margin-bottom: 0;
-  padding-bottom: 12em;
-  @include mixin.sp {
-    padding-bottom: 4em;
-  }
-}
-// end お知らせエリア以下の共通項目
-// start スマホ表示のswiper
-.content-box-sp {
-  margin-top: 30px;
-  color: variables.$whie_txt-color;
-  position: relative;
-  .content-box-diagonal {
-    background-color: variables.$accent_pink-color;
-    width: 100%;
-    height: 50vw;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    transform: skewY(-3deg);
-  }
-  .swiper {
-    .swiper-wrapper {
-      .swiper-slide {
-        .content-inner {
-          padding: 0 20px;
-          .content-desc {
-            h3 {
-              font-weight: 700;
-              font-size: 2rem;
-              margin-top: 15px;
-            }
-            p {
-              margin-top: 15px;
+  // end PC表示のswiper
+  // start スマホ表示のswiper
+  .content-box-sp {
+    margin-top: 30px;
+    color: variables.$whie_txt-color;
+    position: relative;
+    .content-box-diagonal {
+      background-color: variables.$accent_pink-color;
+      width: 100%;
+      height: 50vw;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      transform: skewY(-3deg);
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .content-inner {
+            padding: 0 20px;
+            .content-desc {
+              h3 {
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 15px;
+              }
+              p {
+                margin-top: 15px;
+              }
             }
           }
         }
       }
     }
   }
+  // end スマホ表示のswiper
+  // start スライド切り替えボタン
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    @include mixin.sp {
+      top: 22vw;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .swiper-button-prev {
+    left: -30px;
+    @include mixin.sp {
+      left: 0;
+    }
+    &::after {
+      background: url(../img/prev-btn.png) center/cover no-repeat;
+    }
+  }
+  .swiper-button-next {
+    right: -30px;
+    @include mixin.sp {
+      right: 0;
+    }
+    &::after {
+      background: url(../img/next-btn.png) center/cover no-repeat;
+    }
+  }
+  // end スライド切り替えボタン
 }
-// end スマホ表示のswiper
-// start スライド切り替えボタン
-.swiper-button-prev,.swiper-button-next {
-  width: 60px;
-  height: 60px;
-  @include mixin.sp {
-    top: 22vw;
-  }
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-.swiper-button-prev {
-  left: -30px;
-  @include mixin.sp {
-    left: 0;
-  }
-  &::after {
-    background: url(../img/prev-btn.png) center/cover no-repeat;
-  }
-}
-.swiper-button-next {
-  right: -30px;
-  @include mixin.sp {
-    right: 0;
-  }
-  &::after {
-    background: url(../img/next-btn.png) center/cover no-repeat;
-  }
-}
-// end スライド切り替えボタン
-// end 実況ゲームエリア
+// end 実況中のゲームエリア

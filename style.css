@@ -497,6 +497,7 @@ section:not(:first-child) .content-box {
   margin: 2.62% 0 1.83%;
   transform: skewY(-3deg);
   background-color: #F86EDB;
+  color: #ffffff;
 }
 section:not(:first-child) .content-box .content-box-horizontal {
   transform: skewY(3deg) scale(1.05);
@@ -507,30 +508,6 @@ section:not(:first-child) .content-box .content-box-horizontal {
   section:not(:first-child) .content-box .content-box-horizontal {
     min-width: auto;
   }
-}
-section:not(:first-child) .content-box .content-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section:not(:first-child) .content-box .content-inner .content-img {
-  max-width: 500px;
-}
-section:not(:first-child) .content-box .content-inner .content-desc {
-  width: 50%;
-  -webkit-box-orient: vertical;
-  color: #ffffff;
-  padding-right: 15px;
-}
-section:not(:first-child) .content-box .content-inner .content-desc h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-section:not(:first-child) .content-box .content-inner .content-desc p {
-  margin-top: 15px;
-  font-size: 1.6rem;
-  line-height: 2;
-  text-align: left;
 }
 
 section:last-child {
@@ -543,12 +520,35 @@ section:last-child {
   }
 }
 
-.content-box-sp {
+.games-section .content-box .content-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.games-section .content-box .content-inner .content-img {
+  max-width: 500px;
+}
+.games-section .content-box .content-inner .content-desc {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  padding-right: 15px;
+}
+.games-section .content-box .content-inner .content-desc h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.games-section .content-box .content-inner .content-desc p {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: left;
+}
+.games-section .content-box-sp {
   margin-top: 30px;
   color: #ffffff;
   position: relative;
 }
-.content-box-sp .content-box-diagonal {
+.games-section .content-box-sp .content-box-diagonal {
   background-color: #F86EDB;
   width: 100%;
   height: 50vw;
@@ -557,54 +557,54 @@ section:last-child {
   left: 0;
   transform: skewY(-3deg);
 }
-.content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner {
+.games-section .content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner {
   padding: 0 20px;
 }
-.content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc h3 {
+.games-section .content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc h3 {
   font-weight: 700;
   font-size: 2rem;
   margin-top: 15px;
 }
-.content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc p {
+.games-section .content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc p {
   margin-top: 15px;
 }
-
-.swiper-button-prev, .swiper-button-next {
+.games-section .swiper-button-prev,
+.games-section .swiper-button-next {
   width: 60px;
   height: 60px;
 }
 @media screen and (max-width: 900px) {
-  .swiper-button-prev, .swiper-button-next {
+  .games-section .swiper-button-prev,
+  .games-section .swiper-button-next {
     top: 22vw;
   }
 }
-.swiper-button-prev::after, .swiper-button-next::after {
+.games-section .swiper-button-prev::after,
+.games-section .swiper-button-next::after {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
 }
-
-.swiper-button-prev {
+.games-section .swiper-button-prev {
   left: -30px;
 }
 @media screen and (max-width: 900px) {
-  .swiper-button-prev {
+  .games-section .swiper-button-prev {
     left: 0;
   }
 }
-.swiper-button-prev::after {
+.games-section .swiper-button-prev::after {
   background: url(../img/prev-btn.png) center/cover no-repeat;
 }
-
-.swiper-button-next {
+.games-section .swiper-button-next {
   right: -30px;
 }
 @media screen and (max-width: 900px) {
-  .swiper-button-next {
+  .games-section .swiper-button-next {
     right: 0;
   }
 }
-.swiper-button-next::after {
+.games-section .swiper-button-next::after {
   background: url(../img/next-btn.png) center/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */

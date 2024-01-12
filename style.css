@@ -522,14 +522,23 @@ section:last-child {
 .goal-section .content-box-horizontal {
   position: relative;
 }
-.goal-section .content-box-horizontal p {
+.goal-section .content-box-horizontal .txt-container {
+  max-width: 540px;
+}
+.goal-section .content-box-horizontal .txt-container p {
   margin-top: 20px;
   line-height: 2;
 }
-.goal-section .content-box-horizontal p b {
+.goal-section .content-box-horizontal .txt-container p b {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.3;
+  position: relative;
+  background: linear-gradient(transparent 60%, #98137C 0);
+}
+.goal-section .content-box-horizontal .txt-container p.emphasized {
+  font-size: 2rem;
+  font-weight: 700;
 }
 .goal-section .content-box-horizontal .goal-img {
   width: 30vw;
@@ -537,6 +546,13 @@ section:last-child {
   position: absolute;
   top: calc(150px - 28vw);
   right: calc(350px - 20vw);
+}
+@media screen and (max-width: 900px) {
+  .goal-section .content-box-horizontal .goal-img {
+    width: 35vw;
+    top: -220px;
+    right: 20px;
+  }
 }
 
 .games-section .content-box {

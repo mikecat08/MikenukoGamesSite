@@ -147,13 +147,23 @@ section:last-child {
   }
   .content-box-horizontal {
     position: relative;
-    p {
-      margin-top: 20px;
-      line-height: 2;
-      b {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.3;
+    .txt-container {
+      max-width: 540px;
+      p {
+        margin-top: 20px;
+        line-height: 2;
+        b {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1.3;
+          position: relative;
+          background: -webkit-linear-gradient(transparent 60%, #{variables.$darker_pink-color} 0);
+          background: linear-gradient(transparent 60%, #{variables.$darker_pink-color} 0);
+        }
+        &.emphasized {
+          font-size: 2rem;
+          font-weight: 700;
+        }
       }
     }
     .goal-img {
@@ -162,6 +172,11 @@ section:last-child {
       position: absolute;
       top: calc(150px - 28vw);
       right: calc(350px - 20vw);
+      @include mixin.sp {
+        width: 35vw;
+        top: -220px;
+        right: 20px;
+      }
     }
   }
 }

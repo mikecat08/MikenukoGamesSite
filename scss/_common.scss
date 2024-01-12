@@ -26,8 +26,12 @@ html {
 body {
   font-size: 1.6rem;
   color: variables.$main_txt-color;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: variables.$bg-color;
+}
+
+p {
+  margin-top: 10px;
 }
 
 .img-wrapper {
@@ -70,8 +74,7 @@ body {
 }
 
 .section-inner {
-  max-width: 1160px;
-  min-width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
   @include mixin.sp {

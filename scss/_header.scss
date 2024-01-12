@@ -15,8 +15,7 @@ header {
   .header-inner {
     display: flex;
     justify-content: space-between;
-    max-width: 1160px;
-    min-width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
     height: 100%;
     padding: 0 20px;
@@ -24,7 +23,6 @@ header {
       position: fixed;
       right: -768px;
       top: 10px;
-      min-width: auto;
       width: 768px;
       height: auto;
       background-color: variables.$bg-color;

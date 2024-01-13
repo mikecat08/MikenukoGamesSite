@@ -18,6 +18,7 @@ html {
   font-size: 62.5%;
   font-weight: 500;
   letter-spacing: 0.05em;
+  background-color: variables.$accent_green-color;
 
   //html要素のbox-sizingの値はboerder-boxを指定
   box-sizing: border-box;
@@ -97,6 +98,64 @@ p {
   &.active {
     visibility: visible;
     transition: all 0.35s ease;
+  }
+}
+
+//共通のレイアウト
+.common-layout {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 180px;
+  @include mixin.sp {
+    padding-bottom: 60px;
+  }
+  h1 {
+    color: variables.$accent_txt-color;
+    font-size: 3.6rem;
+    padding-top: 20px;
+    text-align: center;
+    &::after {
+      content: attr(data-title);
+      display: block;
+      font-size: 2rem;
+    }
+  }
+  .breadcrumbs {
+    margin-top: 40px;
+    padding: 0 20px;
+    display: flex;
+    color: variables.$accent_txt-color;
+    @include mixin.sp {
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+    li:not(:last-child)::after {
+      content: ">";
+      display: inline-block;
+      margin: 0 8px 0 4px;
+    }
+  }
+  .desc {
+    color: variables.$accent_txt-color;
+    padding: 0 20px;
+    @include mixin.sp {
+      padding: 0 10px;
+    }
+    a {
+      color: variables.$accent_pink-color;
+      font-weight: 700;
+      text-decoration: underline variables.$accent_pink-color;
+    }
+  }
+  .box-gray {
+    margin-top: 30px;
+    padding: 40px 60px;
+    background-color: variables.$box-color;
+    border-radius: 10px;
+    @include mixin.sp {
+      margin-top: 15px;
+      padding: 15px 20px 30px;
+    }
   }
 }
 

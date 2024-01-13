@@ -9,8 +9,7 @@ header {
   color: variables.$accent_txt-color;
   font-weight: 600;
   @include mixin.sp {
-    height: 20px;
-    background-color: variables.$accent_green-color;
+    height: 0px;
   }
   .header-inner {
     display: flex;

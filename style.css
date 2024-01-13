@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   font-weight: 500;
   letter-spacing: 0.05em;
+  background-color: #2DB5AB;
   box-sizing: border-box;
 }
 
@@ -89,6 +90,72 @@ p {
   transition: all 0.35s ease;
 }
 
+.common-layout {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 180px;
+}
+@media screen and (max-width: 900px) {
+  .common-layout {
+    padding-bottom: 60px;
+  }
+}
+.common-layout h1 {
+  color: #D8D8D8;
+  font-size: 3.6rem;
+  padding-top: 20px;
+  text-align: center;
+}
+.common-layout h1::after {
+  content: attr(data-title);
+  display: block;
+  font-size: 2rem;
+}
+.common-layout .breadcrumbs {
+  margin-top: 40px;
+  padding: 0 20px;
+  display: flex;
+  color: #D8D8D8;
+}
+@media screen and (max-width: 900px) {
+  .common-layout .breadcrumbs {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+}
+.common-layout .breadcrumbs li:not(:last-child)::after {
+  content: ">";
+  display: inline-block;
+  margin: 0 8px 0 4px;
+}
+.common-layout .desc {
+  color: #D8D8D8;
+  padding: 0 20px;
+}
+@media screen and (max-width: 900px) {
+  .common-layout .desc {
+    padding: 0 10px;
+  }
+}
+.common-layout .desc a {
+  color: #F86EDB;
+  font-weight: 700;
+  -webkit-text-decoration: underline #F86EDB;
+          text-decoration: underline #F86EDB;
+}
+.common-layout .box-gray {
+  margin-top: 30px;
+  padding: 40px 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+@media screen and (max-width: 900px) {
+  .common-layout .box-gray {
+    margin-top: 15px;
+    padding: 15px 20px 30px;
+  }
+}
+
 .mod-btn {
   display: flex;
 }
@@ -142,8 +209,7 @@ header {
 }
 @media screen and (max-width: 900px) {
   header {
-    height: 20px;
-    background-color: #2DB5AB;
+    height: 0px;
   }
 }
 header .header-inner {
@@ -377,6 +443,7 @@ footer .copy_right {
 .main-img {
   width: 100%;
   height: 0;
+  margin-top: 20px;
   padding-top: 36.4583333333%;
   background: url(./img/main-visual.jpg) center/cover no-repeat;
 }
@@ -647,4 +714,42 @@ section:last-child {
 }
 .games-section .swiper-button-next::after {
   background: url(../img/next-btn.png) center/cover no-repeat;
+}
+
+.form-wrapper form .form-container dl:not(:first-child) {
+  margin-top: 20px;
+}
+.form-wrapper form .form-container dl dd input {
+  display: block;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.form-wrapper form .form-container dl dd textarea {
+  display: block;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.form-wrapper form .btn-container {
+  display: flex;
+}
+.form-wrapper form .btn-container input {
+  background-color: #F86EDB;
+  font-weight: 700;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  margin: 50px auto 0;
+  padding: 10px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 900px) {
+  .form-wrapper form .btn-container input {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

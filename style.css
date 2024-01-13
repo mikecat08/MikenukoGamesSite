@@ -471,11 +471,11 @@ footer .copy_right {
 }
 
 section:not(:first-child) {
-  margin: 8em auto 12em;
+  margin: 120px auto 180px;
 }
 @media screen and (max-width: 900px) {
   section:not(:first-child) {
-    margin: 2em auto 4em;
+    margin: 30px auto 60px;
   }
 }
 section:not(:first-child) h2 {
@@ -508,11 +508,11 @@ section:not(:first-child) .content-box .content-box-horizontal {
 
 section:last-child {
   margin-bottom: 0;
-  padding-bottom: 12em;
+  padding-bottom: 180px;
 }
 @media screen and (max-width: 900px) {
   section:last-child {
-    padding-bottom: 4em;
+    padding-bottom: 60px;
   }
 }
 
@@ -537,7 +537,7 @@ section:last-child {
   background: linear-gradient(transparent 60%, #98137C 0);
 }
 .goal-section .content-box-horizontal .txt-container p.emphasized {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 .goal-section .content-box-horizontal .goal-img {

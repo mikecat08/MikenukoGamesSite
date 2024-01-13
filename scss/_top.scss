@@ -98,9 +98,9 @@
 // end お知らせエリア
 // start お知らせエリア以下の共通項目
 section:not(:first-child) {
-  margin: 8em auto 12em;
+  margin: 120px auto 180px;
   @include mixin.sp {
-    margin: 2em auto 4em;
+    margin: 30px auto 60px;
   }
   h2 {
     max-width: 1080px;
@@ -132,9 +132,9 @@ section:not(:first-child) {
 }
 section:last-child {
   margin-bottom: 0;
-  padding-bottom: 12em;
+  padding-bottom: 180px;
   @include mixin.sp {
-    padding-bottom: 4em;
+    padding-bottom: 60px;
   }
 }
 // end お知らせエリア以下の共通項目
@@ -161,7 +161,7 @@ section:last-child {
           background: linear-gradient(transparent 60%, #{variables.$darker_pink-color} 0);
         }
         &.emphasized {
-          font-size: 2rem;
+          font-size: 2.2rem;
           font-weight: 700;
         }
       }

@@ -1,0 +1,51 @@
+@use "variables";
+@use "mixin";
+
+// -------------------------
+// お知らせ一覧のスタイル
+// -------------------------
+.news-list {
+  list-style: none !important;
+  .news-list-item {
+    border-top: 1px solid variables.$main_txt-color;
+    &:last-child {
+      border-bottom: 1px solid variables.$main_txt-color;
+    }
+    .news-list-item-inner {
+      padding: 20px 15px;
+      display: flex;
+      @include mixin.sp {
+        flex-direction: column;
+        padding: 15px;
+      }
+      .date {
+        margin-right: 30px;
+        display: inline-block;
+        min-width: 130px;
+        @include mixin.sp {
+          margin-right: 10px;
+          min-width: auto;
+        }
+      }
+      .category {
+        display: inline-block;
+        color: variables.$whie_txt-color;
+        margin-right: 30px;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 1.2rem;
+        background-color: variables.$label_purple-color;
+        min-width: 120px;
+        text-align: center;
+        @include mixin.sp {
+          margin-right: 0;
+        }
+      }
+      .news-title {
+        @include mixin.sp {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

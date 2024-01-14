@@ -172,36 +172,34 @@ p {
   -webkit-text-decoration: underline #98137C;
           text-decoration: underline #98137C;
 }
+.common-layout .box-gray h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-bottom: solid 2px #A5A5A5;
+  padding-bottom: 10px;
+}
+.common-layout .box-gray h2::first-letter {
+  color: #2DB5AB;
+}
+.common-layout .box-gray h2:not(:first-child) {
+  margin-top: 20px;
+}
+.common-layout .box-gray h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.common-layout .box-gray h3::first-letter {
+  color: #2DB5AB;
+}
+.common-layout .box-gray h3:not(:first-child) {
+  margin-top: 20px;
+}
 .common-layout .box-gray ul {
   list-style: disc;
   padding-left: 25px;
 }
 .common-layout .box-gray ul li {
   margin-top: 10px;
-}
-
-.mod-h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  border-bottom: solid 2px #A5A5A5;
-  padding-bottom: 10px;
-}
-.mod-h2::first-letter {
-  color: #2DB5AB;
-}
-.mod-h2:not(:first-child) {
-  margin-top: 20px;
-}
-
-.mod-h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.mod-h3::first-letter {
-  color: #2DB5AB;
-}
-.mod-h3:not(:first-child) {
-  margin-top: 20px;
 }
 
 .mod-btn {

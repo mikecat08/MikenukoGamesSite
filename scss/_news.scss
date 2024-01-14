@@ -4,10 +4,46 @@
 // -------------------------
 // お知らせ一覧のスタイル
 // -------------------------
+.categories-container {
+  background-color: variables.$bg_white-color;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 15px;
+  @include mixin.sp {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      margin-top: 0 !important;
+      padding: 0 15px;
+      position: relative;
+      &:not(:last-child)::after {
+        content: '';
+        display: block;
+        background-color: variables.$border_gray-color;
+        width: 1px;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
 .news-list {
   list-style: none !important;
+  padding-left: 0 !important;
   .news-list-item {
     border-top: 1px solid variables.$main_txt-color;
+    margin-top: 0 !important;
     &:last-child {
       border-bottom: 1px solid variables.$main_txt-color;
     }

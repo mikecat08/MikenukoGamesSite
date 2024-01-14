@@ -105,6 +105,10 @@ p {
   font-size: 3.6rem;
   padding-top: 20px;
   text-align: center;
+  font-weight: 700;
+}
+.common-layout h1::first-letter {
+  color: #F86EDB;
 }
 .common-layout h1::after {
   content: attr(data-title);
@@ -155,6 +159,43 @@ p {
     padding: 15px 20px 30px;
   }
 }
+.common-layout .box-gray p a {
+  color: #98137C;
+  font-weight: 700;
+  -webkit-text-decoration: underline #98137C;
+          text-decoration: underline #98137C;
+}
+.common-layout .box-gray ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+.common-layout .box-gray ul li {
+  margin-top: 10px;
+}
+
+.mod-h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-bottom: solid 2px #A5A5A5;
+  padding-bottom: 10px;
+}
+.mod-h2::first-letter {
+  color: #2DB5AB;
+}
+.mod-h2:not(:first-child) {
+  margin-top: 20px;
+}
+
+.mod-h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.mod-h3::first-letter {
+  color: #2DB5AB;
+}
+.mod-h3:not(:first-child) {
+  margin-top: 20px;
+}
 
 .mod-btn {
   display: flex;
@@ -175,6 +216,18 @@ p {
 }
 .mod-btn a.pink {
   background-color: #F86EDB;
+}
+
+.mod-desc_box {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.mod-desc_box a {
+  color: #2DB5AB !important;
+  -webkit-text-decoration: underline #2DB5AB !important;
+          text-decoration: underline #2DB5AB !important;
 }
 
 .fadeup-target {
@@ -752,4 +805,8 @@ section:last-child {
   .form-wrapper form .btn-container input {
     margin-top: 30px;
   }
+}
+
+.request-list li:not(:first-child) {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

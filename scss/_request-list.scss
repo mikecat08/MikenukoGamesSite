@@ -1,0 +1,12 @@
+@use "variables";
+@use "mixin";
+
+// -------------------------
+// リクエスト一覧のスタイル
+// -------------------------
+
+.request-list {
+  li:not(:first-child) {
+    margin-top: 20px;
+  }
+}

@@ -519,6 +519,7 @@ footer .copy_right {
 }
 .form-wrapper .btn-container {
   display: flex;
+  justify-content: center;
 }
 .form-wrapper .btn-container input {
   background-color: #F86EDB;

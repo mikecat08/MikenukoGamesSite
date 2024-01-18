@@ -24,7 +24,7 @@
       padding: 0 15px;
       position: relative;
       &:not(:last-child)::after {
-        content: '';
+        content: "";
         display: block;
         background-color: variables.$border_gray-color;
         width: 1px;
@@ -82,6 +82,48 @@
           margin-top: 10px;
         }
       }
+    }
+  }
+}
+
+// -------------------------
+// お知らせ投稿記事のスタイル
+// -------------------------
+.label-list {
+  display: flex;
+  list-style: none !important;
+  padding-left: 0 !important;
+  justify-content: space-between;
+}
+.cotegory-wrapper {
+  .category {
+    display: inline-block;
+    color: variables.$whie_txt-color;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    background-color: variables.$label_purple-color;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+.date-wrapper {
+  color: variables.$thin_txt-color;
+}
+.post-wrapper {
+  .eyecatch {
+    display: block;
+    height: 0;
+    padding-top: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
     }
   }
 }

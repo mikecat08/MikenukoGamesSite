@@ -109,7 +109,7 @@ p {
   @include mixin.sp {
     padding-bottom: 60px;
   }
-  h1 {
+  .page-title {
     color: variables.$accent_txt-color;
     font-size: 3.6rem;
     padding-top: 20px;
@@ -169,8 +169,8 @@ p {
       }
     }
     // end 文中リンクモジュール
-    // start h3見出しモジュール
-    h3 {
+    // start h2見出しモジュール
+    h2 {
       font-size: 2.2rem;
       font-weight: 700;
       border-bottom: solid 2px variables.$border_gray-color;
@@ -183,8 +183,8 @@ p {
       }
     }
     // end h2見出しモジュール
-    // start h4見出しモジュール
-    h4 {
+    // start h3見出しモジュール
+    h3 {
       font-size: 1.8rem;
       font-weight: 700;
       &::first-letter {

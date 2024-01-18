@@ -226,6 +226,9 @@ p {
 .mod-btn a.pink {
   background-color: #F86EDB;
 }
+.mod-btn a.gray {
+  background-color: #777777;
+}
 
 .mod-desc_box {
   background-color: #ffffff;

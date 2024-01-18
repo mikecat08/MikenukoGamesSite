@@ -230,6 +230,9 @@ p {
     &.pink {
       background-color: variables.$accent_pink-color;
     }
+    &.gray {
+      background-color: variables.$btn_gray-color;
+    }
   }
 }
 

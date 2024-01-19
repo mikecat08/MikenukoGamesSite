@@ -549,10 +549,8 @@ footer .copy_right {
 }
 
 .categories-container {
-  background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 30px;
-  padding: 15px;
 }
 @media screen and (max-width: 900px) {
   .categories-container {

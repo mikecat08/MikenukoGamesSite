@@ -651,9 +651,20 @@ footer .copy_right {
   border-radius: 15px;
   padding: 5px 20px;
   font-size: 1.2rem;
-  background-color: #BD5FEB;
   min-width: 120px;
   text-align: center;
+}
+.cotegory-wrapper .category.live {
+  background-color: #FF8800;
+}
+.cotegory-wrapper .category.topics {
+  background-color: #F86EDB;
+}
+.cotegory-wrapper .category.blog {
+  background-color: #4273F8;
+}
+.cotegory-wrapper .category.schedule {
+  background-color: #F54681;
 }
 
 .date-wrapper {
@@ -670,6 +681,7 @@ footer .copy_right {
 }
 .post-wrapper .eyecatch img {
   width: 100%;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 0;

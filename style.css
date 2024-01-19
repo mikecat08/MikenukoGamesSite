@@ -584,9 +584,20 @@ footer .copy_right {
   transform: translateY(-50%);
 }
 
+.news-heading {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
 .news-list {
   list-style: none !important;
   padding-left: 0 !important;
+  margin-top: 36px;
+}
+@media screen and (max-width: 900px) {
+  .news-list {
+    margin-top: 20px;
+  }
 }
 .news-list .news-list-item {
   border-top: 1px solid #222222;
@@ -714,7 +725,7 @@ footer .copy_right {
 .news-section .section-inner h2 {
   font-size: 3.6rem;
   left: 0.6rem;
-  padding: 1em 0;
+  padding-top: 1em;
   text-align: center;
   font-weight: 700;
 }
@@ -722,7 +733,7 @@ footer .copy_right {
   .news-section .section-inner h2 {
     font-size: 3rem;
     margin-bottom: 0;
-    padding: 0.7em 0;
+    padding-top: 0.7em;
   }
 }
 .news-section .section-inner h2 span {

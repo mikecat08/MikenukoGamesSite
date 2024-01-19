@@ -38,9 +38,18 @@
   }
 }
 
+.news-heading {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
 .news-list {
   list-style: none !important;
   padding-left: 0 !important;
+  margin-top: 36px;
+  @include mixin.sp {
+    margin-top: 20px;
+  }
   .news-list-item {
     border-top: 1px solid variables.$main_txt-color;
     margin-top: 0 !important;

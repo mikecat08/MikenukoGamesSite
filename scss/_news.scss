@@ -79,11 +79,22 @@
         border-radius: 15px;
         padding: 5px 20px;
         font-size: 1.2rem;
-        background-color: variables.$label_purple-color;
         min-width: 120px;
         text-align: center;
         @include mixin.sp {
           margin-right: 0;
+        }
+        &.live {
+          background-color: variables.$label_orange-color;
+        }
+        &.topics {
+          background-color: variables.$label_pink-color;
+        }
+        &.blog {
+          background-color: variables.$label_blue-color;
+        }
+        &.schedule {
+          background-color: variables.$label_red-color;
         }
       }
       .news-title {

@@ -573,7 +573,7 @@ footer .copy_right {
 .categories-container ul li:not(:last-child)::after {
   content: "";
   display: block;
-  background-color: #A5A5A5;
+  background-color: #222222;
   width: 1px;
   height: 14px;
   position: absolute;
@@ -656,6 +656,34 @@ footer .copy_right {
   .news-list .news-list-item .news-list-item-inner .news-title {
     margin-top: 10px;
   }
+}
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+.wp-pagenavi span, .wp-pagenavi a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #222222;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in;
+}
+.wp-pagenavi span, .wp-pagenavi a:not(:last-child) {
+  margin-right: 12px;
+}
+.wp-pagenavi a.nextpostslink, .wp-pagenavi a.previouspostslink {
+  width: auto;
+  padding: 5px 18px;
+}
+.wp-pagenavi span.current {
+  background-color: #F86EDB;
+  color: #ffffff;
+  border-color: #F86EDB;
 }
 
 .label-list {

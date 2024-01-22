@@ -24,7 +24,7 @@
       &:not(:last-child)::after {
         content: "";
         display: block;
-        background-color: variables.$border_gray-color;
+        background-color: variables.$main_txt-color;
         width: 1px;
         height: 14px;
         position: absolute;
@@ -72,7 +72,7 @@
       }
       .category {
         display: inline-block;
-        color: variables.$whie_txt-color;
+        color: variables.$white_txt-color;
         margin-right: 30px;
         border-radius: 15px;
         padding: 5px 20px;
@@ -104,6 +104,34 @@
   }
 }
 
+.wp-pagenavi {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+  span, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid variables.$main_txt-color;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+  }
+  span, a:not(:last-child) {
+    margin-right: 12px;
+  }
+  a.nextpostslink, a.previouspostslink {
+    width: auto;
+    padding: 5px 18px;
+  }
+  span.current {
+    background-color: variables.$accent_pink-color;
+    color: variables.$white_txt-color;
+    border-color: variables.$accent_pink-color;
+  }
+}
+
 // -------------------------
 // お知らせ投稿記事のスタイル
 // -------------------------
@@ -116,7 +144,7 @@
 .cotegory-wrapper {
   .category {
     display: inline-block;
-    color: variables.$whie_txt-color;
+    color: variables.$white_txt-color;
     border-radius: 15px;
     padding: 5px 20px;
     font-size: 1.2rem;

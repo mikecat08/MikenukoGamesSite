@@ -6,7 +6,7 @@
 // -------------------------
 footer {
   background-color: variables.$darker_pink-color;
-  color: variables.$whie_txt-color;
+  color: variables.$white_txt-color;
   padding:30px 0 50px;
   @include mixin.sp {
     padding-bottom: 30px;

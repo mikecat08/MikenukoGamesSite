@@ -76,7 +76,7 @@ section:not(:first-child) {
     padding: 50px 0 20px;
     transform: skewY(-3deg);
     background-color: variables.$accent_pink-color;
-    color: variables.$whie_txt-color;
+    color: variables.$white_txt-color;
     .content-box-horizontal {
       -webkit-transform: skewY(3deg);
       transform: skewY(3deg);
@@ -173,7 +173,7 @@ section:last-child {
   // start スマホ表示のswiper
   .content-box-sp {
     margin-top: 30px;
-    color: variables.$whie_txt-color;
+    color: variables.$white_txt-color;
     position: relative;
     .content-box-diagonal {
       background-color: variables.$accent_pink-color;

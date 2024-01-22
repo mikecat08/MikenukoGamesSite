@@ -226,7 +226,7 @@ section:last-child {
       left: 0;
     }
     &::after {
-      background: url(../img/prev-btn.png) center/cover no-repeat;
+      background: url(./img/prev-btn.png) center/cover no-repeat;
     }
   }
   .swiper-button-next {
@@ -235,7 +235,7 @@ section:last-child {
       right: 0;
     }
     &::after {
-      background: url(../img/next-btn.png) center/cover no-repeat;
+      background: url(./img/next-btn.png) center/cover no-repeat;
     }
   }
   // end スライド切り替えボタン

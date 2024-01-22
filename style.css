@@ -67,7 +67,7 @@ p {
 }
 
 .contents-bg {
-  background: url(../img/background.jpg) center/contain repeat-y;
+  background: url(./img/background.jpg) center/contain repeat-y;
 }
 
 .section-inner {
@@ -368,17 +368,17 @@ header .header-inner .global_nav-container .global_nav-list .global_nav-list-ite
 header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .home::before {
   width: 30px;
   height: 30px;
-  background: url(../img/home.svg) center/cover no-repeat;
+  background: url(./img/home.svg) center/cover no-repeat;
 }
 header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .news::before {
   width: 34px;
   height: 30px;
-  background: url(../img/news.svg) center/cover no-repeat;
+  background: url(./img/news.svg) center/cover no-repeat;
 }
 header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .request::before {
   width: 34px;
   height: 26px;
-  background: url(../img/request.svg) center/cover no-repeat;
+  background: url(./img/request.svg) center/cover no-repeat;
 }
 header .burger-btn {
   position: fixed;
@@ -950,7 +950,7 @@ section:last-child {
   }
 }
 .games-section .swiper-button-prev::after {
-  background: url(../img/prev-btn.png) center/cover no-repeat;
+  background: url(./img/prev-btn.png) center/cover no-repeat;
 }
 .games-section .swiper-button-next {
   right: 10px;
@@ -961,5 +961,5 @@ section:last-child {
   }
 }
 .games-section .swiper-button-next::after {
-  background: url(../img/next-btn.png) center/cover no-repeat;
+  background: url(./img/next-btn.png) center/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */

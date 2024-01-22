@@ -96,17 +96,17 @@ header {
           .home::before{
             width: 30px;
             height: 30px;
-            background: url(../img/home.svg) center/cover no-repeat;
+            background: url(./img/home.svg) center/cover no-repeat;
           }
           .news::before{
             width: 34px;
             height: 30px;
-            background: url(../img/news.svg) center/cover no-repeat;
+            background: url(./img/news.svg) center/cover no-repeat;
           }
           .request::before{
             width: 34px;
             height: 26px;
-            background: url(../img/request.svg) center/cover no-repeat;
+            background: url(./img/request.svg) center/cover no-repeat;
           }
         }
       }

@@ -20,10 +20,3 @@ $breakpoint-scroll: '1080px';
     @content;
   }
 }
-
-// PC表示で横スクロールが発生する時用のミキシン
-@mixin scroll {
-  @media screen and (min-width:$breakpoint-pc) and (max-width:$breakpoint-scroll) {
-    @content;
-  }
-}

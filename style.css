@@ -804,8 +804,8 @@ section:not(:first-child) h2 .img-wrapper {
   max-width: 230px;
 }
 section:not(:first-child) .content-box {
-  margin: 2.62% 0 1.83%;
-  padding: 50px 0 20px;
+  margin: 2.62% 0;
+  padding: 50px 0 40px;
   transform: skewY(-3deg);
   background-color: #F86EDB;
   color: #ffffff;

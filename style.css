@@ -848,8 +848,9 @@ section:last-child {
   background: linear-gradient(transparent 60%, #98137C 0);
 }
 .goal-section .content-box-horizontal .txt-container p.emphasized {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 .goal-section .content-box-horizontal .goal-img {
   width: 30vw;

@@ -159,9 +159,11 @@ section:last-child {
             font-weight: 700;
           }
           p {
-            margin-top: 15px;
             font-size: 1.6rem;
             text-align: left;
+            &:first-child {
+              margin-top: 15px;
+            }
           }
         }
       }
@@ -193,7 +195,7 @@ section:last-child {
                 font-size: 2rem;
                 margin-top: 15px;
               }
-              p {
+              p:not(:first-child) {
                 margin-top: 15px;
               }
             }

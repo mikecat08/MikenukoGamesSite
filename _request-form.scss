@@ -52,3 +52,7 @@
     }
   }
 }
+// WordPressのプラグインで自動的に吐き出されるspan要素を削除
+.wpcf7-spinner {
+  display: none !important;
+}

@@ -545,6 +545,10 @@ footer .copy_right {
   }
 }
 
+.wpcf7-spinner {
+  display: none !important;
+}
+
 .request-list li:not(:first-child) {
   margin-top: 20px;
 }
@@ -891,9 +895,11 @@ section:last-child {
   font-weight: 700;
 }
 .games-section .content-box .swiper .content-inner .content-desc p {
-  margin-top: 15px;
   font-size: 1.6rem;
   text-align: left;
+}
+.games-section .content-box .swiper .content-inner .content-desc p:first-child {
+  margin-top: 15px;
 }
 .games-section .content-box-sp {
   margin-top: 30px;
@@ -917,7 +923,7 @@ section:last-child {
   font-size: 2rem;
   margin-top: 15px;
 }
-.games-section .content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc p {
+.games-section .content-box-sp .swiper .swiper-wrapper .swiper-slide .content-inner .content-desc p:not(:first-child) {
   margin-top: 15px;
 }
 .games-section .swiper-button-prev,

@@ -58,7 +58,7 @@
 }
 // 送信完了メッセージ
 .wpcf7 form.sent .wpcf7-response-output {
-  border-color: variables.$accent_green-color;
+  border-color: variables.$accent_green-color !important;
   background-color: variables.$accent_green-color;
   color: variables.$white_txt-color;
   border-radius: 3px;
@@ -67,7 +67,7 @@
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output,
 .wpcf7 form.payment-required .wpcf7-response-output {
-  border-color: variables.$invalid_submit-color;
+  border-color: variables.$invalid_submit-color !important;
   background-color: variables.$invalid_submit-color;
   color: variables.$white_txt-color;
 }

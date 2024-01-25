@@ -562,6 +562,7 @@ footer .copy_right {
   border-color: #EC3F7A !important;
   background-color: #EC3F7A;
   color: #ffffff;
+  border-radius: 3px;
 }
 
 .request-list li:not(:first-child) {

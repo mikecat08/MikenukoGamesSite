@@ -780,18 +780,49 @@ footer .copy_right {
   flex-wrap: wrap;
   padding-left: 0 !important;
 }
+@media screen and (max-width: 900px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
 .gallery .fanart-container {
   width: 50%;
   margin-top: 0 !important;
 }
+@media screen and (max-width: 900px) {
+  .gallery .fanart-container {
+    width: 100%;
+    margin-top: 15px !important;
+  }
+}
 .gallery .fanart-container:nth-child(2n) {
   padding-left: 20px;
+}
+@media screen and (max-width: 900px) {
+  .gallery .fanart-container:nth-child(2n) {
+    padding-left: 0;
+  }
 }
 .gallery .fanart-container:nth-child(2n+1) {
   padding-right: 20px;
 }
+@media screen and (max-width: 900px) {
+  .gallery .fanart-container:nth-child(2n+1) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gallery .fanart-container:nth-child(n+2) {
+    margin-top: 30px !important;
+  }
+}
 .gallery .fanart-container:nth-child(n+3) {
   margin-top: 40px !important;
+}
+@media screen and (max-width: 900px) {
+  .gallery .fanart-container:nth-child(n+3) {
+    margin-top: 30px !important;
+  }
 }
 .gallery .fanart-container p {
   text-align: center;

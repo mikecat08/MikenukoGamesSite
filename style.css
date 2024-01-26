@@ -268,6 +268,10 @@ p {
   -webkit-animation: translateY_up_animation 1s ease 0.3s forwards, opacity_animation 1s ease 0.3s forwards;
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 header {
   height: 80px;
   color: #D8D8D8;

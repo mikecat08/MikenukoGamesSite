@@ -237,7 +237,7 @@ p {
   }
 }
 
-//
+// 説明ボックスモジュールのスタイル
 .mod-desc_box {
   background-color: variables.$bg_white-color;
   border-radius: 5px;
@@ -287,3 +287,6 @@ p {
   -webkit-animation: translateY_up_animation 1s ease 0.3s forwards,
     opacity_animation 1s ease 0.3s forwards;
 }
+
+// reCAPTCHAを非表示にする。
+.grecaptcha-badge {visibility: hidden;}

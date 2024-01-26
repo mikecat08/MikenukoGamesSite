@@ -513,6 +513,14 @@ footer .copy_right {
 .form-wrapper .form-container dl:not(:first-child) {
   margin-top: 20px;
 }
+.form-wrapper .form-container dl dt label.required::after {
+  content: "必須";
+  color: #ffffff;
+  background-color: #F86EDB;
+  margin-left: 3px;
+  border-radius: 3px;
+  padding: 0 5px;
+}
 .form-wrapper .form-container dl dd input {
   display: block;
   background-color: #ffffff;

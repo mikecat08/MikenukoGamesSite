@@ -11,7 +11,13 @@
         margin-top: 20px;
       }
       dt {
-        label {
+        label.required::after {
+          content: '必須';
+          color: variables.$white_txt-color;
+          background-color: variables.$accent_pink-color;
+          margin-left: 3px;
+          border-radius: 3px;
+          padding: 0 5px;
         }
       }
       dd {

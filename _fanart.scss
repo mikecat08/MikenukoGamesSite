@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixin";
+
+// -------------------------
+// ファンアートページのスタイル
+// -------------------------
+.gallery {
+  list-style: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0 !important;
+  .fanart-container {
+    width: 50%;
+    margin-top: 0 !important;
+    &:nth-child(2n) {
+      padding-left: 20px;
+    }
+    &:nth-child(2n+1) {
+      padding-right: 20px;
+    }
+    &:nth-child(n+3) {
+      margin-top: 40px !important;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

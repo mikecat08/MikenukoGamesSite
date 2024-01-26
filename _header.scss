@@ -93,15 +93,20 @@ header {
               margin-right: 15px;
             }
           }
-          .home::before{
-            width: 30px;
-            height: 30px;
-            background: url(./img/home.svg) center/cover no-repeat;
-          }
           .news::before{
             width: 34px;
             height: 30px;
             background: url(./img/news.svg) center/cover no-repeat;
+          }
+          .about::before{
+            width: 23px;
+            height: 30px;
+            background: url(./img/about.svg) center/cover no-repeat;
+          }
+          .fanart::before{
+            width: 30px;
+            height: 30px;
+            background: url(./img/fanart.svg) center/cover no-repeat;
           }
           .request::before{
             width: 34px;

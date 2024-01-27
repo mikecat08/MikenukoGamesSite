@@ -241,3 +241,52 @@ section:last-child {
   // end スライド切り替えボタン
 }
 // end 実況中のゲームエリア
+// start アバウトエリア
+.about-section {
+  @include mixin.sp {
+    padding-bottom: 350px !important;
+  }
+  .content-box {
+    padding-top: 30px !important;
+    @include mixin.sp {
+      padding-bottom: 80px !important;
+    }
+    .content-box-horizontal {
+      position: relative;
+      .txt-container {
+        max-width: 540px;
+        @include mixin.sp {
+          margin: 0 auto;
+          text-align: center;
+        }
+        p {
+          margin-top: 10px;
+          line-height: 2;
+        }
+        .mod-btn {
+          a {
+            margin-top: 30px;
+            @include mixin.pc {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+      .about-img {
+        width: 30vw;
+        max-width: 500px;
+        position: absolute;
+        top: calc(220px - 28vw);
+        right: calc(350px - 20vw);
+        @include mixin.sp {
+          width: 70%;
+          max-width: 270px;
+          top: 275px;
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
+}
+// end アバウトエリア

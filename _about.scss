@@ -1,0 +1,26 @@
+@use "variables";
+@use "mixin";
+
+// -------------------------
+// アバウトページのスタイル
+// -------------------------
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  @include mixin.sp {
+    flex-direction: column;
+  }
+  .left-column {
+    width: 35%;
+    @include mixin.sp {
+      width: 100%;
+    }
+  }
+  .right-column {
+    width: 60%;
+    @include mixin.sp {
+      width: 100%;
+    }
+  }
+}

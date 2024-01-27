@@ -127,6 +127,7 @@ p {
   margin-top: 40px;
   padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   color: #D8D8D8;
 }
 @media screen and (max-width: 900px) {

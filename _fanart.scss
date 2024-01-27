@@ -42,6 +42,9 @@
         margin-top: 30px !important;
       }
     }
+    .img-wrapper {
+      box-shadow: 4px 4px 6px variables.$blur_shadow-color;
+    }
     p {
       text-align: center;
     }

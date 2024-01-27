@@ -828,6 +828,9 @@ footer .copy_right {
     margin-top: 30px !important;
   }
 }
+.gallery .fanart-container .img-wrapper {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
 .gallery .fanart-container p {
   text-align: center;
 }

@@ -24,3 +24,28 @@
     }
   }
 }
+.games-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  li {
+    a {
+      display: inline-block;
+      padding: 0 38px 10px 0;
+      border-bottom: 1px solid variables.$border_gray-color;
+      word-break: break-all;
+      position: relative;
+      color: variables.$darker_pink-color;
+      &::after {
+        content: '';
+        background: url(./img/icon-link.png) center/cover no-repeat;
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        top: 43%;
+        right: 5px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

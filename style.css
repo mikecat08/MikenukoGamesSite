@@ -115,6 +115,11 @@ p {
   text-align: center;
   font-weight: 700;
 }
+@media screen and (max-width: 900px) {
+  .common-layout .page-title {
+    padding-top: 64px;
+  }
+}
 .common-layout .page-title::first-letter {
   color: #F86EDB;
 }

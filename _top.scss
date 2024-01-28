@@ -137,6 +137,9 @@ section:last-child {
 // end 目標エリア
 // start 実況中のゲームエリア
 .games-section {
+  @include mixin.sp {
+    margin-bottom: 0 !important;
+  }
   // start PC表示のswiper
   .content-box {
     padding: 0 !important;

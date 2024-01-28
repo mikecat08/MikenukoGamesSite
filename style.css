@@ -1023,6 +1023,11 @@ section:last-child {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .games-section {
+    margin-bottom: 0 !important;
+  }
+}
 .games-section .content-box {
   padding: 0 !important;
 }

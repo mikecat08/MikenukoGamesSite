@@ -114,6 +114,7 @@ p {
   padding-top: 20px;
   text-align: center;
   font-weight: 700;
+  margin-top: 0;
 }
 @media screen and (max-width: 900px) {
   .common-layout .page-title {
@@ -182,6 +183,7 @@ p {
 .common-layout .box-gray h1 {
   font-size: 3.2rem;
   font-weight: 700;
+  line-height: 1.4;
 }
 .common-layout .box-gray h2 {
   font-size: 2.2rem;

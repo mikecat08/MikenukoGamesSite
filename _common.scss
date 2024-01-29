@@ -119,6 +119,7 @@ p {
     margin-top: 0;
     @include mixin.sp {
       padding-top: 64px;
+      font-size: 3.5rem;
     }
     &::first-letter {
       color: variables.$accent_pink-color;
@@ -180,6 +181,7 @@ p {
       font-size: 3.2rem;
       font-weight: 700;
       line-height: 1.4;
+      margin-top: 10px;
     }
     // end h1見出しモジュール
     // start h2見出しモジュール

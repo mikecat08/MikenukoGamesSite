@@ -102,6 +102,10 @@ header {
             width: 23px;
             height: 30px;
             background: url(./img/about.svg) center/cover no-repeat;
+            @include mixin.sp {
+              width: 29px;
+              height: 37px;
+            }
           }
           .fanart::before{
             width: 30px;
@@ -112,6 +116,10 @@ header {
             width: 34px;
             height: 26px;
             background: url(./img/request.svg) center/cover no-repeat;
+            @include mixin.sp {
+              width: 30px;
+              height: 23px;
+            }
           }
         }
       }

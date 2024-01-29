@@ -391,6 +391,12 @@ header .header-inner .global_nav-container .global_nav-list .global_nav-list-ite
   height: 30px;
   background: url(./img/about.svg) center/cover no-repeat;
 }
+@media screen and (max-width: 900px) {
+  header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .about::before {
+    width: 29px;
+    height: 37px;
+  }
+}
 header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .fanart::before {
   width: 30px;
   height: 30px;
@@ -400,6 +406,12 @@ header .header-inner .global_nav-container .global_nav-list .global_nav-list-ite
   width: 34px;
   height: 26px;
   background: url(./img/request.svg) center/cover no-repeat;
+}
+@media screen and (max-width: 900px) {
+  header .header-inner .global_nav-container .global_nav-list .global_nav-list-item .request::before {
+    width: 30px;
+    height: 23px;
+  }
 }
 header .burger-btn {
   position: fixed;

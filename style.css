@@ -717,7 +717,7 @@ footer .copy_right {
 }
 .news-list .news-list-item .news-list-item-inner .news-title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 @media screen and (max-width: 900px) {
   .news-list .news-list-item .news-list-item-inner .news-title {
@@ -731,6 +731,7 @@ footer .copy_right {
   height: 25px;
   background: url(./img/icon-link.png) center/cover no-repeat;
   margin-left: 8px;
+  margin-top: 4px;
 }
 
 .wp-pagenavi {

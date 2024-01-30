@@ -97,7 +97,7 @@
       }
       .news-title {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         @include mixin.sp {
           margin-top: 10px;
         }
@@ -108,6 +108,7 @@
           height: 25px;
           background: url(./img/icon-link.png) center/cover no-repeat;
           margin-left: 8px;
+          margin-top: 4px;
         }
       }
     }

@@ -715,10 +715,22 @@ footer .copy_right {
 .news-list .news-list-item .news-list-item-inner .category.schedule {
   background-color: #EC3F7A;
 }
+.news-list .news-list-item .news-list-item-inner .news-title {
+  display: flex;
+  align-items: flex-end;
+}
 @media screen and (max-width: 900px) {
   .news-list .news-list-item .news-list-item-inner .news-title {
     margin-top: 10px;
   }
+}
+.news-list .news-list-item .news-list-item-inner .news-title::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(./img/icon-link.png) center/cover no-repeat;
+  margin-left: 8px;
 }
 
 .wp-pagenavi {

@@ -217,6 +217,10 @@ p {
   margin-top: 10px;
 }
 
+.wp-block-image {
+  margin-top: 10px;
+}
+
 .mod-btn {
   display: flex;
 }

@@ -222,6 +222,11 @@ p {
   }
 }
 
+// WordPress投稿画面で埋め込んだ画像ブロック上側に余白を追加
+.wp-block-image {
+  margin-top: 10px;
+}
+
 //ボタンモジュール
 .mod-btn {
   display: flex;
